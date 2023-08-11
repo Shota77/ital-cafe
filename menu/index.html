@@ -8,36 +8,113 @@
 </head>
 <body>
 
-    <div class="flex">
-        <div class="image-area">
-            <div class="landscape-up-100 mr-0">
-                <img class="landscape-up-100-img" src="./public/img/ice_cafelate.jpg" alt="ice_cafelate">
-            </div>
-            <div class="flex second-row mr-0">
-                <div>
-                    <img class="landscape-50" src="./public/img/seccret.jpg" alt="ice_cafelate">
-                </div>
-                <div>
-                    <img class="landscape-50" src="./public/img/hot_coffee.jpg" alt="ice_cafelate">
-                </div>
-            </div>
-            <div class="landscape-up-100 mr-0">
-                <img class="landscape-up-100-img" src="./public/img/ice_cafelate.jpg" alt="ice_cafelate">
-            </div>
-            <div class="flex second-row mr-0">
-                <div>
-                    <img class="landscape-50" src="./public/img/seccret.jpg" alt="ice_cafelate">
-                </div>
-                <div>
-                    <img class="landscape-50" src="./public/img/hot_coffee.jpg" alt="ice_cafelate">
-                </div>
-            </div>
-        </div>
-        <div class="text-area">
-            <div class="text-area-bk">
+    <div class="">
 
+    </div>
+
+    <div class="items-wrap cold">
+
+        <div class="img-wrap">
+            <img src="./public/img/ice_cafelate.jpg" alt="ice_cafelate">
+        </div>
+        <div class="text-wrap">
+            <h4 class="items-title">Cold Drinks</h4>
+            <div class="item">
+                <p>カプチーノ</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>カフェラテ</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>ラテマキアート</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>フラットホワイト</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>ウインナーコーヒー</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>オレンジジュース</p>
+                <p>¥ 500</p>
+            </div>
+            <div class="item">
+                <p>パインジュース</p>
+                <p>¥ 500</p>
             </div>
         </div>
+
+    </div>
+
+    <div class="items-wrap hot">
+
+        <div class="img-wrap">
+            <img src="./public/img/hot_coffee.jpg" alt="ice_cafelate">
+        </div>
+        <div class="text-wrap">
+            <h4 class="items-title">Hot Drinks</h4>
+            <div class="item">
+                <p>カプチーノ</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>カフェラテ</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>ラテマキアート</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>フラットホワイト</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>ウインナーコーヒー</p>
+                <p>¥ 600</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="items-wrap cake">
+
+        <div class="img-wrap">
+            <img src="./public/img/all_cakes.jpg" alt="ice_cafelate">
+        </div>
+        <div class="text-wrap">
+            <h4 class="items-title">Cakes</h4>
+            <div class="item">
+                <p>モンブラン</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>レモンタルト</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>フォンダンショコラ</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>ミルクレープ</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>チーズケーキ</p>
+                <p>¥ 600</p>
+            </div>
+            <div class="item">
+                <p>ティラミス</p>
+                <p>¥ 600</p>
+            </div>
+        </div>
+
     </div>
     
 </body>
@@ -49,49 +126,64 @@
         background-size: cover;
         margin: 0;
         width: 100%;
+        padding-top: 32px;
+        padding-left: 24px;
     }
 
     .flex {
-        display: flex;
+        
     }
 
-    .landscape-50 {
+    .img-wrap {
+        width: 35%;
+        margin-left: -25px;
+        height: auto;
+    }
+
+    .img-wrap img {
         width: 100%;
-        height: 100%;
     }
 
-    .mr-0 {
+    .items-wrap {
+        display: flex;
+        width: 100%;
+        height: 30%;
+        opacity: 0.8;
+        margin-left: 15px;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    .text-wrap {
+        width: 50%;
+        margin-left: 16px;
+    }
+
+    .cold {   
+        background-color: rgb(65, 102, 189);
+    }
+
+    .cake {
+        background-color: rgb(65, 189, 150);
+    }
+
+    .hot {
+        background-color: rgb(140, 48, 48);
+    }
+
+    .item {
+        display: flex;
+        justify-content: space-between;
+    }
+    .item p {
         margin: 0;
     }
-
-    .image-area {
-        width: 40%;
-        height: 100vh;
+    .items-title {
+        text-align: center;
+        margin: 4px 0;
     }
 
-    .image-area .landscape-up-100 {
-        width: 100%;
-        height: 25vh;
-    }
-    .image-area .landscape-up-100 .landscape-up-100-img {
-        width: 100%;
-        height: 100%;
-    }
-    .image-area .second-row{
-        width: 100%;
-        height: 25vh;
-    }
 
-    .text-area {
-        width: 60%;
-        height: 100vh;
-    }
-    .text-area-bk {
-        height: 90vh;
-        margin: 5vh 10% 5vh 0;
-        background-color: rgb(52, 171, 46);
-        opacity: 0.6;
-    }
 </style>
 
 </html>
